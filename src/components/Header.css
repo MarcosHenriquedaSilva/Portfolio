@@ -1,0 +1,39 @@
+.header {
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%; /* O header ocupa toda a largura da tela */
+    background-color: rgba(13, 18, 14, 0.5); /* Cor de fundo com transparência */
+    color: #E8E9E0; /* Cor do texto */
+    z-index: 1000; /* Garante que o header fique sobre os outros elementos */
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center;
+    padding: 1rem 2rem; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar o header */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+}
+
+.header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Espaçamento entre os links */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #E8E9E0; /* Cor do texto */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #C4C8AC; /* Muda a cor ao passar o mouse */
+}

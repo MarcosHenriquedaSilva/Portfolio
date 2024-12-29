@@ -1,0 +1,70 @@
+.contact {
+    background-color: var(--cream);
+    color: var(--dark-green);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--sage-green);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--dark-green);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+.submit-button {
+    background-color: #C0754D; /* Cor de fundo contrastante */
+    color: #E8E9E0; /* Cor do texto em branco ou claro para contrastar */
+    padding: 0.75rem 1.5rem; /* Espaçamento interno */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem; /* Espaçamento acima do botão */
+    width: 100%; /* Largura total */
+    display: block; /* Exibição como bloco */
+}
+
+.submit-button:hover {
+    background-color: #D69C80; /* Cor mais clara no hover */
+    color: #0D120E; /* Cor do texto no hover */
+}
+
+.error {
+    color: red; /* Cor vermelha para a mensagem de erro */
+    font-size: 0.875rem; /* Tamanho da fonte */
+    margin-top: 0.5rem; /* Espaço acima da mensagem de erro */
+    font-weight: bold; /* Deixa o texto em negrito */
+}

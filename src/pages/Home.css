@@ -1,0 +1,58 @@
+/* Paleta de cores */
+:root {
+    --dark-green: #0D120E;
+    --olive-green: #45553D;
+    --sage-green: #6D7E5F;
+    --light-green: #92A079;
+    --cream: #C4C8AC;
+    --off-white: #E8E9E0;
+}
+
+/* Estilos da Home */
+.home {
+    background-color: var(--dark-green); /* Fundo escuro */
+    color: var(--cream); /* Texto principal */
+    padding: 2rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-color: var(--olive-green); /* Fundo da seção */
+    color: var(--cream); /* Texto na seção */
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--light-green); /* Título com tom suave */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--sage-green); /* Texto secundário */
+}
+
+.cta-button {
+    background-color: var(--light-green); /* Botão principal */
+    color: var(--dark-green);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--sage-green); /* Cor de hover no botão */
+}

@@ -1,0 +1,17 @@
+.about {
+    background-color: var(--sage-green); /* Fundo suave */
+    color: var(--dark-green); /* Texto escuro */
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--cream);
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
