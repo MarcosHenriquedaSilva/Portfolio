@@ -13,3 +13,27 @@ body {
 html {
     scroll-behavior: smooth;
 }
+.fixed-cv-button {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da lateral direita */
+    z-index: 1000; /* Certifica que está acima dos outros elementos */
+}
+
+.fixed-cv-button a {
+    display: inline-block;
+    background-color: #688E74; /* Cor do botão */
+    color: #E8E9E0; /* Cor do texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fixed-cv-button a:hover {
+    background-color: #395348; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Pequeno zoom no hover */
+}

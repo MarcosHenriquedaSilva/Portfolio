@@ -21,6 +21,13 @@ const App = () => {
             <section id="contact">
                 <Contact />
             </section>
+
+            {/* Botão fixo para baixar o CV */}
+            <div className="fixed-cv-button">
+                <a href="./Marcos Henrique - Dev..pdf" download="Marcos Henrique - Dev..pdf">
+                    Baixar CV
+                </a>
+            </div>
         </div>
     );
 };
