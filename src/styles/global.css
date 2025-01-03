@@ -36,3 +36,26 @@ body {
     background-color: #016863; /* Cor mais escura ao passar o mouse */
     transform: scale(1.05); /* Pequeno zoom no hover */
 }
+.fixed-linkedin-button {
+    position: fixed;
+    bottom: 80px; /* Distância da parte inferior */
+    right: 20px; /* Distância da lateral direita */
+    z-index: 1000;
+}
+.fixed-linkedin-button a {
+    display: inline-block;
+    background-color: #0077b5; /* Cor do LinkedIn */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fixed-linkedin-button a:hover {
+    background-color: #005f8b; /* Cor mais escura no hover */
+    transform: scale(1.05);
+}

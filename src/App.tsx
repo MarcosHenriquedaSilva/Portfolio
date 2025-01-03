@@ -24,7 +24,11 @@ const App = () => {
       <section id="contact">
         <Contact />
       </section>
-
+      <div className="fixed-linkedin-button">
+    <a href="https://www.linkedin.com/in/marcos-h-silva/" target="_blank" rel="noopener noreferrer">
+     LinkedIn
+    </a>
+</div> 
       <div className="fixed-cv-button">
         <a href="./Marcos Henrique - Dev..pdf" download="Marcos Henrique - Dev..pdf">
           Baixar CV
