@@ -2,7 +2,27 @@
     background-color: var(--sage-green); /* Fundo suave */
     color: var(--dark-green); /* Texto escuro */
     padding: 4rem 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+.about-image {
+    width: 40%; /* Ajuste o tamanho da imagem */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 60%;
 }
 
 .about h2 {
@@ -14,4 +34,23 @@
 .about p {
     font-size: 1.2rem;
     line-height: 1.6;
+}
+.download-cv {
+    margin-top: 20px;
+}
+
+.download-cv a {
+    display: inline-block;
+    background-color: #016560;
+    color: #E8E9E0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-cv a:hover {
+    background-color: #016863;
+    transform: scale(1.05);
 }

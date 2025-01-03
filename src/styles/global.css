@@ -10,9 +10,7 @@ body {
     color: #016964; /* Cor do texto, usando o tom mais escuro da paleta */
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 .fixed-cv-button {
     position: fixed;
