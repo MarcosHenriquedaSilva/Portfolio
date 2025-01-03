@@ -2,6 +2,7 @@
     background-color: var(--sage-green); /* Fundo suave */
     color: var(--dark-green); /* Texto escuro */
     padding: 4rem 2rem;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

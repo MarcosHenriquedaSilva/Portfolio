@@ -1,17 +1,7 @@
-/* Paleta de cores */
-:root {
-    --dark-green: #0D120E;
-    --olive-green: #45553D;
-    --sage-green: #6D7E5F;
-    --light-green: #92A079;
-    --cream: #C4C8AC;
-    --off-white: #E8E9E0;
-}
 
-/* Estilos da Home */
-.hero {
-    background-color: #01645F; /* Fundo com cor da paleta */
-    color: #E8E9E0; /* Contraste claro para o texto */
+.home {
+    background-color: #01645F; 
+    color: #E8E9E0; 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,49 +10,21 @@
     padding: 20px;
   }
   
-  .hero-title {
+  .home-title {
     font-size: 3.5rem;
     font-weight: bold;
     margin: 0;
   }
   
-  .hero-tagline {
+  .home-tagline {
     font-size: 1.6rem;
     margin: 15px 0 25px;
   }
   
-  .hero-buttons {
+  .home-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
   
-  .btn {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .btn-primary {
-    background-color: #C4C8AC;
-    color: #03111C;
-  }
-  
-  .btn-primary:hover {
-    background-color: #AE733A;
-    color: #E8E9E0;
-  }
-  
-  .btn-secondary {
-    background-color: #688E74;
-    color: #E8E9E0;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #395348;
-    color: #C4C8AC;
-  }
   

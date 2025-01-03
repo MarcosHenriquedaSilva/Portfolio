@@ -1,5 +1,6 @@
 .contact {
     background-color: var(--cream);
+    height: 100vh;
     color: var(--dark-green);
     padding: 4rem 2rem;
     text-align: center;

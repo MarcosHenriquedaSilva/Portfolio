@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --dark-green: #0D120E;
+    --olive-green: #45553D;
+    --sage-green: #6D7E5F;
+    --light-green: #92A079;
+    --cream: #C4C8AC;
+    --off-white: #E8E9E0;
+}
 
 body {
     font-family: Arial, sans-serif;
