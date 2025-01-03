@@ -4,10 +4,13 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Header from './components/Header';
+import { Hero } from './components/Hero';
+import './styles/global.css';
 
 const App = () => {
     return (
         <div>
+           
             <Header />
             <section id="home">
                 <Home />

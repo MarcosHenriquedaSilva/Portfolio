@@ -2,15 +2,15 @@ import React from 'react';
 import './Home.css';
 
 const Home = () => {
-    return (
-        <div className="home">
-            <section className="hero">
-                <h1>Bem-vindo ao meu Portfólio</h1>
-                <p>Desenvolvedor em busca de criar soluções criativas e eficientes.</p>
-                <button className="cta-button">Veja meus projetos</button>
-            </section>
-        </div>
-    );
+  return (
+    <div className="hero">
+      <div className="hero-content">
+        <h1 className="hero-title">Marcos Henrique</h1>
+        <p className="hero-tagline">Desenvolvedor Full Stack em Construção</p>
+        
+      </div>
+    </div>
+  );
 };
 
 export default Home;

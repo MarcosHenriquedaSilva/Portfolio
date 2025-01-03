@@ -1,51 +1,79 @@
 import React from 'react';
 import './Projects.css';
+import projeto1 from '../assets/OIG.jpeg';
+
+const projects = [
+  {
+    id: 1,
+    title: "Projeto 1",
+    description: "Descrição curta do projeto 1.",
+    image: projeto1,
+    github: "https://github.com/seu-usuario/projeto1",
+    live: "https://link-do-projeto1",
+  },
+  {
+    id: 2,
+    title: "Projeto 2",
+    description: "Descrição curta do projeto 2.",
+    image: projeto1,
+    github: "https://github.com/seu-usuario/projeto2",
+    live: "https://link-do-projeto2",
+  },
+  {
+    id: 3,
+    title: "Projeto 3",
+    description: "Descrição curta do projeto 3.",
+    image: projeto1,
+    github: "https://github.com/seu-usuario/projeto3",
+    live: "https://link-do-projeto3",
+  },
+  {
+    id: 4,
+    title: "Projeto 4",
+    description: "Descrição curta do projeto 4.",
+    image: projeto1,
+    github: "https://github.com/seu-usuario/projeto4",
+    live: "https://link-do-projeto4",
+  },
+  {
+    id: 5,
+    title: "Projeto 5",
+    description: "Descrição curta do projeto 5.",
+    image: projeto1,
+    github: "https://github.com/seu-usuario/projeto5",
+    live: "https://link-do-projeto5",
+  },
+  {
+    id: 6,
+    title: "Projeto 6",
+    description: "Descrição curta do projeto 6.",
+    image: projeto1,
+    github: "https://github.com/seu-usuario/projeto6",
+    live: "https://link-do-projeto6",
+  },
+  // Adicione mais projetos aqui
+];
 
 const Projects = () => {
     return (
-        <div className="projects">
-    <h2>Projetos</h2>
-    <div className="projects-grid">
-        <div className="project-card">
-            <img src="link-para-imagem-1.jpg" alt="Projeto 1" className="project-image" />
-            <h3>Projeto 1</h3>
-            <p>Descrição breve do projeto...</p>
-            <div className="project-link-container">
-            <a href="link-para-deploy-1" className="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-            <a href="link-para-repositorio-1" className="project-link" target="_blank" rel="noopener noreferrer">Repositório</a>
-        </div>
-        </div>
-        <div className="project-card">
-            <img src="link-para-imagem-2.jpg" alt="Projeto 2" className="project-image" />
-            <h3>Projeto 2</h3>
-            <p>Descrição breve do projeto...</p>
-            <div className="project-link-container">
-            <a href="link-para-deploy-2" className="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-            <a href="link-para-repositorio-2" className="project-link" target="_blank" rel="noopener noreferrer">Repositório</a>
+      <section id="projects" className="projects">
+        <h2 className="projects-title">Meus Projetos</h2>
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <div key={project.id} className="project-card">
+              <img src={project.image} alt={project.title} className="project-image" />
+              <div className="overlay">
+                <h3 className="project-title">{project.title}</h3>
+                <div className="project-buttons">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn">Ver Código</a>
+                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn">Ver Projeto</a>
+                </div>
+              </div>
             </div>
+          ))}
         </div>
-        <div className="project-card">
-            <img src="link-para-imagem-3.jpg" alt="Projeto 3" className="project-image" />
-            <h3>Projeto 3</h3>
-            <p>Descrição breve do projeto...</p>
-            <div className="project-link-container">
-            <a href="link-para-deploy-3" className="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-            <a href="link-para-repositorio-3" className="project-link" target="_blank" rel="noopener noreferrer">Repositório</a>
-            </div>
-        </div>
-        <div className="project-card">
-            <img src="link-para-imagem-4.jpg" alt="Projeto 4" className="project-image" />
-            <h3>Projeto 4</h3>
-            <p>Descrição breve do projeto...</p>
-            <div className="project-link-container">
-            <a href="link-para-deploy-4" className="project-link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-            <a href="link-para-repositorio-4" className="project-link" target="_blank" rel="noopener noreferrer">Repositório</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-    );
+      </section>
+  );
 };
 
 export default Projects;

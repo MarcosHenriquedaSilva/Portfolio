@@ -9,50 +9,60 @@
 }
 
 /* Estilos da Home */
-.home {
-    background-color: var(--dark-green); /* Fundo escuro */
-    color: var(--cream); /* Texto principal */
-    padding: 2rem;
-    text-align: center;
-    min-height: 100vh;
+.hero {
+    background-color: #01645F; /* Fundo com cor da paleta */
+    color: #E8E9E0; /* Contraste claro para o texto */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hero {
-    background-color: var(--olive-green); /* Fundo da seção */
-    color: var(--cream); /* Texto na seção */
-    padding: 4rem 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    width: 100%;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--light-green); /* Título com tom suave */
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: var(--sage-green); /* Texto secundário */
-}
-
-.cta-button {
-    background-color: var(--light-green); /* Botão principal */
-    color: var(--dark-green);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .hero-tagline {
+    font-size: 1.6rem;
+    margin: 15px 0 25px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
     border: none;
-    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
     font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: var(--sage-green); /* Cor de hover no botão */
-}
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #C4C8AC;
+    color: #03111C;
+  }
+  
+  .btn-primary:hover {
+    background-color: #AE733A;
+    color: #E8E9E0;
+  }
+  
+  .btn-secondary {
+    background-color: #688E74;
+    color: #E8E9E0;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #395348;
+    color: #C4C8AC;
+  }
+  

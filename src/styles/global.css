@@ -6,13 +6,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Mantido o fundo claro */
+    color: #016964; /* Cor do texto, usando o tom mais escuro da paleta */
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 .fixed-cv-button {
     position: fixed;
     bottom: 20px; /* Distância da parte inferior */
@@ -22,8 +23,8 @@ html {
 
 .fixed-cv-button a {
     display: inline-block;
-    background-color: #688E74; /* Cor do botão */
-    color: #E8E9E0; /* Cor do texto */
+    background-color: #016560; /* Cor do botão com o verde intermediário */
+    color: #E8E9E0; /* Cor do texto do botão */
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
@@ -34,6 +35,6 @@ html {
 }
 
 .fixed-cv-button a:hover {
-    background-color: #395348; /* Cor mais escura ao passar o mouse */
+    background-color: #016863; /* Cor mais escura ao passar o mouse */
     transform: scale(1.05); /* Pequeno zoom no hover */
 }

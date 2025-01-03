@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="header">
             {/* Logo ou título do portfólio */}
-            <h1 className="header-logo">Meu Portfólio</h1>
+            <h1 className="header-logo">- MHS /-</h1>
 
             {/* Barra de navegação */}
             <nav className="navbar">
