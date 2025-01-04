@@ -1,15 +1,17 @@
 import React from 'react';
 import './Projects.css';
 import projeto1 from '../assets/OIG.jpeg';
+import geradorTimes from '../assets/gerador-times.png';
+import churrasCerto from '../assets/churras-certo.png'
 
 const projects = [
   {
     id: 1,
-    title: "Projeto 1",
+    title: "Gerador de Times",
     description: "Descrição curta do projeto 1.",
-    image: projeto1,
-    github: "https://github.com/seu-usuario/projeto1",
-    live: "https://link-do-projeto1",
+    image: geradorTimes,
+    github: "https://github.com/MarcosHenriquedaSilva/gerador-times-react",
+    live: "https://gerador-times-react-ltj9-fh1i18t5h.vercel.app/",
   },
   {
     id: 2,
@@ -21,11 +23,11 @@ const projects = [
   },
   {
     id: 3,
-    title: "Projeto 3",
+    title: "Churras Certo",
     description: "Descrição curta do projeto 3.",
-    image: projeto1,
-    github: "https://github.com/seu-usuario/projeto3",
-    live: "https://link-do-projeto3",
+    image: churrasCerto,
+    github: "https://github.com/MarcosHenriquedaSilva/ChurrasCerto",
+    live: "https://marcoshenriquedasilva.github.io/ChurrasCerto/",
   },
   {
     id: 4,
