@@ -1,30 +1,74 @@
-
 .home {
-    background-color: #01645F; 
-    color: #E8E9E0; 
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  background-color: #01645F;
+  color: #E8E9E0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home-tagline {
+  font-size: 1.6rem;
+  margin: 15px 0 25px;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  bottom: 20px; /* Coloca os ícones na parte inferior */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza os ícones */
+  animation: moveIcons 20s ease-in-out infinite; /* Animação do carrossel */
+  animation-play-state: running; /* Garante que a animação comece em execução */
+}
+
+.tech-icons:hover {
+  animation-play-state: paused; /* Pausa a animação quando passar o mouse */
+}
+
+
+@keyframes moveIcons {
+  0% {
+    transform: translateX(-10%); /* Começa fora da tela à direita */
   }
-  
-  .home-title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin: 0;
+  50% {
+    transform: translateX(-100%); /* Move para o lado esquerdo */
   }
-  
-  .home-tagline {
-    font-size: 1.6rem;
-    margin: 15px 0 25px;
+  100% {
+    transform: translateX(100%); /* Volta para o lado direito */
   }
-  
-  .home-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  
+}
+.tech-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s ease-in-out;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+}
+
+.tech-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tech-icon:hover .tech-name {
+  opacity: 1;
+}
